@@ -16,3 +16,23 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+body.pink{
+    background-color: #f49ac2;
+}
+
+body.black{
+    background-color: #000000;
+}
+
+body.yellow{
+    background-color: #ffd85e;
+}
+
+body.home{
+    background-image:url('~/css/img/sunwink10s.gif'); background-repeat:repeat;
+}
+
+body.team{
+    background-image:url('~/css/img/sunwink10s.gif'); background-repeat:repeat;
+}

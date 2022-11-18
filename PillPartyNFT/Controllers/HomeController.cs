@@ -15,10 +15,24 @@ namespace PillPartyNFT.Controllers
 
         public IActionResult Index()
         {
+
+            
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult About()
+        {
+            return View();
+        }
+        public IActionResult Team()
+        {
+            return View();
+        }
+        public IActionResult Gallery()
+        {
+            return View();
+        }
+        public IActionResult Mint()
         {
             return View();
         }
