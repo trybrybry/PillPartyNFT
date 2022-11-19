@@ -15,25 +15,33 @@ namespace PillPartyNFT.Controllers
 
         public IActionResult Index()
         {
+            ViewBag.color = "home";
 
-            
+
             return View();
         }
 
         public IActionResult About()
         {
+            ViewBag.color = "yellow";
             return View();
         }
         public IActionResult Team()
         {
+            ViewBag.color = "team";
+
             return View();
         }
         public IActionResult Gallery()
         {
+            ViewBag.color = "black";
+
             return View();
         }
         public IActionResult Mint()
         {
+            ViewBag.color = "pink";
+
             return View();
         }
 
