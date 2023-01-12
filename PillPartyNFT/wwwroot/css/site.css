@@ -2,10 +2,11 @@ html {
   font-size: 14px;
 }
 
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+@media all and (min-width: 768px) and (max-width: 1024px) {
+    .pr {
+        display: none;
+    }
+
 }
 
 html {
@@ -14,10 +15,9 @@ html {
 }
 
 body.home {
-    height: 100%;
     width: 100%;
-    background: url('img/Chill Pill Web Site Art Demo 2 (1).png');
-
+    max-width: 100%;
+    height: auto;
 }
 body.team {
     height: 100%;

@@ -18,4 +18,8 @@
     <Folder Include="wwwroot\final\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Content Remove="Views\Home\Gallery.cshtml" />
+    <Content Remove="Views\Home\Mint.cshtml" />
+  </ItemGroup>
 </Project>
