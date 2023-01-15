@@ -6,7 +6,7 @@ html {
 body.home {
     height: 100vmin;
     width: 100vmax;
-    background: url('img/Chill Pill Web Site Art Demo 2 (1).png');
+    background: url('img/home.png');
     background-size: contain;
 }
 body.team {
