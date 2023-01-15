@@ -4,12 +4,13 @@ html {
 
 
 body.home {
-    height: 100vmax;
+    height: 100vmin;
     width: 100vmax;
     background: url('img/Chill Pill Web Site Art Demo 2 (1).png');
+    background-size: contain;
 }
 body.team {
-    height: 100vmax;
+    height: 100vmin;
     width: 100vmax;
     background: url(img/Team_Page.png);
     background-size:contain;
@@ -25,14 +26,11 @@ body.black {
     background-color: #000000;
 }
 body.yellow {
-    height: 100vmax;
+    height: 100vmin;
     width: 100vmax;
     background: url(img/yellow_wb.png);
+    background-size: contain;
 }
-body.test {
-    height: 95%;
-    width: 100%;
-    background-color: red;
-}
+
 
 
