@@ -4,9 +4,9 @@ html {
 
 
 body.home {
+    height: 100%;
     width: 100%;
-    max-width: 100%;
-    height: auto;
+    background: url('img/Chill Pill Web Site Art Demo 2 (1).png');
 }
 body.team {
     height: 100%;
