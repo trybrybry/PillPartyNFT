@@ -6,7 +6,7 @@ html {
 body.home {
     height: 100vmin;
     width: 100vmax;
-    background: url('img/home.png');
+    background: url('img/Website Home Layer 16 A.png');
     background-size: contain;
 }
 body.team {
@@ -31,6 +31,7 @@ body.yellow {
     background: url(img/yellow_wb.png);
     background-size: contain;
 }
+
 
 
 
