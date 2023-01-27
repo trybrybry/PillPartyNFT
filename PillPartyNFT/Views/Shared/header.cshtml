@@ -1,33 +1,74 @@
-﻿<header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Pill Party NFT</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item" id="Home">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item" id="About">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="About">About</a>
-                        </li>
-                        <li class="nav-item" id="Team">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Team">Team</a>
-                        </li>
-                        <!---->
-                        <!--<li class="nav-item" id="Gallery">
-        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Gallery">Gallery</a>
-    </li>
-    <li class="nav-item" id="Mint">
-        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Mint">Mint</a>
-    </li>-->
-                    </ul>
-                    <a href="https://twitter.com/pillpartynft?ref_src=twsrc%5Etfw"><img src="~/css/img/Legal_Twitter_Coin_Blue.png" width="40" height="40"></img></a>
-                    <a href="https://discord.gg/66CGhvz7BW"><img src="~/css/img/Legal_Discord_Coin_Blue.png" width="40" height="40"></img></a>
-                </div>
-            </div>
-        </nav>
-    </header>
+﻿<link rel="stylesheet" href="https://use.typekit.net/lcb6sil.css" />
+<style>
+    .hometext {
+      font-size: 50px;
+      font-family: "Bebas Neue Pro";
+      color: rgb(0, 0, 0);
+      line-height: 1;
+      text-align: left;
+      position: absolute;
+      left: 35vmax;
+      top: 1vmin;
+      z-index: 47;
+      text-decoration: none;
+    }
+    .abouttexthead {
+      font-size: 50px;
+      font-family: "Bebas Neue Pro";
+      color: rgb(0, 0, 0);
+      line-height: 1;
+      text-align: left;
+      position: absolute;
+      left: 45vmax;
+      top: 1vmin;
+      z-index: 46;
+      text-decoration: none;
+    }
+    .teamtext {
+      font-size: 50px;
+      font-family: "Bebas Neue Pro";
+      color: rgb(0, 0, 0);
+      line-height: 1;
+      text-align: left;
+      position: absolute;
+      left: 55vmax;
+      top: 1vmin;
+      z-index: 45;
+      text-decoration: none;
+    }
+    .gallerytext {
+      font-size: 50px;
+      font-family: "Bebas Neue Pro";
+      color: rgb(0, 0, 0);
+      line-height: 1;
+      text-align: left;
+      position: absolute;
+      left: 1031.9px;
+      top: 262px;
+      z-index: 44;
+      text-decoration: none;
+    }
+
+    .minttext {
+      font-size: 50px;
+      font-family: "Bebas Neue Pro";
+      color: rgb(0, 0, 0);
+      line-height: 1;
+      text-align: left;
+      position: absolute;
+      left: 35vmax;
+      top: 10vmin;
+      z-index: 43;
+      text-decoration: none;
+    }
+</style>
+
+<header>
+
+            <a class="hometext" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+
+            <a class="abouttexthead" asp-area="" asp-controller="Home" asp-action="About">About</a>
+
+            <a class="teamtext" asp-area="" asp-controller="Home" asp-action="Team">Team</a>
+ 
+ </header>
