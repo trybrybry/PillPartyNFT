@@ -24,4 +24,9 @@
     <Content Remove="Views\Home\Mint.cshtml" />
     <Content Remove="wwwroot\Font\" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Update="wwwroot\Font\TiltWarp-Regular-VariableFont_XROT,YROT.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
 </Project>
