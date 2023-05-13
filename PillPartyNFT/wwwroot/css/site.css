@@ -31,6 +31,12 @@ body.yellow {
     background: url(img/yellow_wb.png);
     background-size: contain;
 }
+body.cream {
+    height: 100vmin;
+    width: 100vmax;
+    background-color: #EFEBE0;
+}
+
 
 
 
