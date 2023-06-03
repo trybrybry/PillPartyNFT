@@ -11,10 +11,22 @@ namespace PillPartyNFT.Controllers
 {
     public class ClubsController : Controller
     {
+        public int Count = 0; 
         // GET: /<controller>/
         public IActionResult Index()
         {
             return View(new ClubsViewModel());
+        }
+
+        [HttpGet]
+        public JsonResult Next()
+        {
+            Count++;
+            if(Count == 6)
+            {
+                Count = 0; 
+            }
+            return Json(Count.ToString()); 
         }
     }
 }

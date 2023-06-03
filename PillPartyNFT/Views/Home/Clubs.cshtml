@@ -126,8 +126,8 @@
 
 <p class="Club" id="club" count ="0" style=" font-size: 250%;">Demon Club</p>
 <p class="percent" id="percentage" count ="0" style="font-size: 100%;">370/10000</p>
-<p class="text" count ="0"style="font-size: 150%;">DONT FEAR THE REAPER! <br /> DEMON CLUB HAS A DARKER <br /> AESTHETIC THAN THE REST. <br /> LOOKING FOR THE PARTS GRANTS <br />YOU MEMBERSHIP</p>
-<p class="points" count ="0"style="font-size: 125%">- WHITE, BLACK, RED SKIN <br /> -DEVILHORNS </p>
+<p class="text" count ="0" style="font-size: 150%;">DONT FEAR THE REAPER! <br /> DEMON CLUB HAS A DARKER <br /> AESTHETIC THAN THE REST. <br /> LOOKING FOR THE PARTS GRANTS <br />YOU MEMBERSHIP</p>
+<p class="points" count ="0" style="font-size: 125%">- WHITE, BLACK, RED SKIN <br /> -DEVILHORNS </p>
 
 
 
@@ -140,7 +140,19 @@
     <script>
         function Next() {
 
-            $('#club').html('@Model.GetCount()');
+
+            $.ajax({
+                type: "GET",
+                url: "/Home/NEXT",
+                data: { "count": $("#club").attr('count') },
+                success: function (responce) {
+                    $('#club').html(responce.count)
+                    $('#club').attr('count', responce.count)
+
+                },
+                error: function (responce) { alert(responce.data) }
+            });
+
         }
 
         function Back() {

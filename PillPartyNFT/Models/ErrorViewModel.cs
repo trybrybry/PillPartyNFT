@@ -31,7 +31,7 @@ namespace PillPartyNFT.Models
         {
             if(count == 6)
             {
-                return "0"; 
+                return count.ToString(); 
             }
             else
             {
