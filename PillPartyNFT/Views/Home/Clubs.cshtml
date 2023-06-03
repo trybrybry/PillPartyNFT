@@ -1,4 +1,7 @@
-﻿<link rel="stylesheet" href="https://use.typekit.net/lcb6sil.css" />
+﻿@model ClubsViewModel; 
+
+
+<link rel="stylesheet" href="https://use.typekit.net/lcb6sil.css" />
 <link href="https://fonts.cdnfonts.com/css/peace-sans" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -6,10 +9,152 @@
 
 
 <style>
+    .outline {
+        position: absolute;
+        left: 10vmax;
+        top: 0vmin;
+        width: 80vmax;
+        height: 55.35vmax;
+        z-index: 1;
+    }
+
+    .title {
+        position: absolute;
+        left: 10vmax;
+        top: 0vmin;
+        width: 80vmax;
+        height: 55.35vmax;
+        z-index: 0;
+    }
 
 
+    .coin {
+        position: absolute;
+        left: 63.5vmax;
+        top: 75vmin;
+        width: 14vmax;
+        height: 14vmax;
+        z-index: 3;
+    }
 
+    .Club {
+        position: absolute;
+        left: 55vmax;
+        top: 32vmin;
+        width: 80vmax;
+        height: 55.35vmax;
+        z-index: 8;
+    }
+
+    .mascot {
+        position: absolute;
+        left: 10vmax;
+        top: 0vmin;
+        width: 80vmax;
+        height: 55.35vmax;
+        z-index: 0;
+    }
+
+    .percent {
+        position: absolute;
+        left: 50vmax;
+        top: 41.5vmin;
+        width: 80vmax;
+        height: 55.35vmax;
+        z-index: 8;
+    }
+
+    .text {
+        position: absolute;
+        left: 50vmax;
+        top: 47.5vmin;
+        width: 22vmax;
+        height: 55.35vmax;
+        z-index: 8;
+        word-wrap: normal
+    }
+
+    .points {
+        position: absolute;
+        left: 50vmax;
+        top: 82.5vmin;
+        width: 20vmax;
+        height: 55.35vmax;
+        z-index: 8;
+        word-wrap: normal
+    }
+
+    .back {
+        position: absolute;
+        left: 5vmax;
+        top: 40vmin;
+        width: 20vmax;
+        height: 20vmax;
+        background-color: transparent;
+        outline: none;
+        padding: 0;
+        border: none;
+        z-index: 10;
+        word-wrap: normal
+    }
+
+
+    .next {
+        position: absolute;
+        left: 75vmax;
+        top: 40vmin;
+        width: 20vmax;
+        height: 20vmax;
+        background-color: transparent;
+        outline: none;
+        padding: 0;
+        border: none;
+        z-index: 10;
+        word-wrap: normal
+    }
 </style>
+
+@functions{
+
+
+ }
+
+
+<img class="title" src="~/css/img/Clubs Title.png" />
+<img class="coin" src="~/css/img/Demon Coin GIF.gif" />
+<img class="mascot" src="~/css/img/Demon Mascot.png" />
+
+<p class="Club" id="club" count ="0" style=" font-size: 250%;">Demon Club</p>
+<p class="percent" id="percentage" count ="0" style="font-size: 100%;">370/10000</p>
+<p class="text" count ="0"style="font-size: 150%;">DONT FEAR THE REAPER! <br /> DEMON CLUB HAS A DARKER <br /> AESTHETIC THAN THE REST. <br /> LOOKING FOR THE PARTS GRANTS <br />YOU MEMBERSHIP</p>
+<p class="points" count ="0"style="font-size: 125%">- WHITE, BLACK, RED SKIN <br /> -DEVILHORNS </p>
+
+
+
+<button class="back" onClick="Back()" id="back" type="button"><img style="width: 20vmax; height: 20vmax;" src="~/css/img/Back Arrow.png" /> </button>
+<button class="next" onClick ="Next()"id="next" type="button"><img style="width: 20vmax; height: 20vmax;" src="~/css/img/Next Arrow.png" /> </button>
+
+
+@section Scripts
+{
+    <script>
+        function Next() {
+
+            $('#club').html('@Model.GetCount()');
+        }
+
+        function Back() {
+            alert('@Model.GetCount() Back');
+    }
+    </script>
+}
+
+
+
+
+
+
+
 
 
 

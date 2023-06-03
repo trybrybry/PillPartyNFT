@@ -74,8 +74,9 @@ namespace PillPartyNFT.Controllers
         public IActionResult Clubs()
         {
             ViewBag.color = "cream";
+            ViewBag.count = "0"; 
 
-            return View();
+            return View( new ClubsViewModel());
         }
 
 
