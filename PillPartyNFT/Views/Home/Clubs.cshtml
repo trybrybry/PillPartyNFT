@@ -145,7 +145,7 @@
                 url: "/Home/NEXT",
                 data: { "count": $("#club").attr('count') },
                 success: function (responce) {
-                    $('#club').html(responce.count)
+                    $('#club').html(responce.club)
                     $('#text').html(responce.text)
                     $('#percentage').html(responce.percent)
                     $('#coin').prop('src', responce.coin)
@@ -166,11 +166,11 @@
                 url: "/Home/PREV",
                 data: { "count": $("#club").attr('count') },
                 success: function (responce) {
-                    $('#club').html(responce.count)
+                    $('#club').html(responce.club)
                     $('#text').html(responce.text)
                     $('#percentage').html(responce.percent)
-                    $('#club').attr('count', responce.count)
-                    $('#club').attr('count', responce.count)
+                    $('#coin').prop('src', responce.coin)
+                    $('#points').html(responce.points)
                     $('#club').attr('count', responce.count)
                     $('#club').attr('count', responce.count)
 

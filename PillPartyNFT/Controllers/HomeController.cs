@@ -165,6 +165,17 @@ namespace PillPartyNFT.Controllers
             { "6", "-MONEY HAND <br />-MONEY GUN <br />-ANY SKIN BUT GREEN" }
         };
 
+        Dictionary<string, string> clubMap = new Dictionary<string, string>()
+        {
+            { "0", "DEMON CLUB" },
+            { "1", "40 CLUB" },
+            { "2", "ANGEL CLUB" },
+            { "3", "COLOR CLUB" },
+            { "4", "GOBLIN CLUB" },
+            { "5", "FIGHT CLUB" },
+            { "6", "MONEY CLUB" }
+        };
+
 
         Dictionary<string, string> pathMap = new Dictionary<string, string>()
         {
@@ -191,8 +202,8 @@ namespace PillPartyNFT.Controllers
             Text = textMap[key];
             Percent = percentMap[key];
             Coin = coinMap[key];
-            //Club = clubMap[key];
             Path = pathMap[key];
+            Club = clubMap[key];
             Points = pointsMap[key]; 
 
         }
