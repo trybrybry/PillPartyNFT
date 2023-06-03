@@ -145,13 +145,13 @@ namespace PillPartyNFT.Controllers
 
         Dictionary<string, string> coinMap = new Dictionary<string, string>()
         {
-            {"0", "~/css/img/Demon Coin GIF.gif" },
-            {"1", "18/10000" },
-            {"2", "97/10000" },
-            {"3", "100/10000" },
-            {"4", "1121/10000" },
-            {"5", "67/10000" },
-            {"6", "314/10000" }
+            {"0", "/css/img/Demon Coin GIF.gif" },
+            {"1", "/css/img/40 Club GIF.gif" },
+            {"2", "/css/img/Angel Club GIF.gif" },
+            {"3", "/css/img/Color Club GIF.gif" },
+            {"4", "/css/img/Goblin Coin GIF.gif" },
+            {"5", "/css/img/Fight Club GIF.gif" },
+            {"6", "/css/img/Money Club GIF.gif" }
         };
 
 
@@ -164,7 +164,7 @@ namespace PillPartyNFT.Controllers
             Count = count;
             Text = textMap[key];
             Percent = percentMap[key];
-           // Coin = coinMap[key];
+            Coin = coinMap[key];
             //Club = clubMap[key];
             //Path = pathMap[key];
             //Poins = pointsMap[key]; 

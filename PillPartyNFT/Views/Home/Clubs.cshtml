@@ -121,7 +121,7 @@
 
 
 <img class="title" src="~/css/img/Clubs Title.png" />
-<img class="coin" src="~/css/img/Demon Coin GIF.gif" />
+<img class="coin" id="coin" src="~/css/img/Demon Coin GIF.gif" />
 <img class="mascot" src="~/css/img/Demon Mascot.png" />
 
 <p class="Club" id="club" count ="0" style=" font-size: 250%;">Demon Club</p>
@@ -148,7 +148,7 @@
                     $('#club').html(responce.count)
                     $('#text').html(responce.text)
                     $('#percentage').html(responce.percent)
-                    $('#club').attr('count', responce.count)
+                    $('#coin').prop('src', responce.coin)
                     $('#club').attr('count', responce.count)
                     $('#club').attr('count', responce.count)
                     $('#club').attr('count', responce.count)
