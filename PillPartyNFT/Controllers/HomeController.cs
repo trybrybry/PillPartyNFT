@@ -79,7 +79,7 @@ namespace PillPartyNFT.Controllers
 
             var text = Count.ToString(); 
 
-            var rp = new Attributes(Count, text); 
+            var rp = new Attributes(Count);
 
             return Json(rp);
         }
@@ -89,12 +89,34 @@ namespace PillPartyNFT.Controllers
 	{
         public int Count { get; set; }
         public string Text { get; set; }
+        public string Percent { get; set; }
+        public string Coin { get; set; }
+        public string Club { get; set; }
+        public string Path { get; set; }
+        public string Points { get; set;  }
 
 
-        public Attributes(int count, string text)
+
+        Dictionary<string, string> textMap = new Dictionary<string, string>()
         {
+            {"0", "DONT FEAR THE REAPER! <br /> DEMON CLUB HAS A DARKER <br /> AESTHETIC THAN THE REST. <br /> LOOKING FOR THE PARTS GRANTS <br />YOU MEMBERSHIP</p>" }
+        };
+
+        
+
+
+
+        public Attributes(int count )
+        {
+            var key = count.ToString(); 
             Count = count;
-            Text = text; 
+            Text = textMap[key];
+            Percent = percentMap[key];
+            Coin = coinMap[key];
+            Club = clubMap[key];
+            Path = pathMap[key];
+            Poins = pointsMap[key]; 
+
         }
 	}
 }
