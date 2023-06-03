@@ -72,7 +72,7 @@ namespace PillPartyNFT.Controllers
         {
              var Count = int.Parse(count); 
             Count++;
-            if (Count == 6)
+            if (Count == 7)
             {
                 Count = 0;
             }
@@ -83,6 +83,28 @@ namespace PillPartyNFT.Controllers
 
             return Json(rp);
         }
+
+        [HttpGet]
+        public JsonResult Prev(string count)
+        {
+            var Count = int.Parse(count);
+            Count--;
+            if (Count == -1)
+            {
+                Count = 6;
+            }
+
+            var text = Count.ToString();
+
+            var rp = new Attributes(Count);
+
+            return Json(rp);
+        }
+
+
+
+
+
     }
 
 	 class Attributes
@@ -108,7 +130,31 @@ namespace PillPartyNFT.Controllers
             {"6", "MONEY CLUB'S INFLUENCE EXTENDS. <br /> FAR BEYOND THE BOARD ROOM. <br /> UNIMAGINABLE WEALTH MANIFEST. <br /> MONEY MONEY MONEY.</p>" }
         };
 
-        
+
+
+        Dictionary<string, string> percentMap = new Dictionary<string, string>()
+        {
+            {"0", "370/10000" },
+            {"1", "18/10000" },
+            {"2", "97/10000" },
+            {"3", "100/10000" },
+            {"4", "1121/10000" },
+            {"5", "67/10000" },
+            {"6", "314/10000" }
+        };
+
+        Dictionary<string, string> coinMap = new Dictionary<string, string>()
+        {
+            {"0", "~/css/img/Demon Coin GIF.gif" },
+            {"1", "18/10000" },
+            {"2", "97/10000" },
+            {"3", "100/10000" },
+            {"4", "1121/10000" },
+            {"5", "67/10000" },
+            {"6", "314/10000" }
+        };
+
+
 
 
 
@@ -117,12 +163,11 @@ namespace PillPartyNFT.Controllers
             var key = count.ToString(); 
             Count = count;
             Text = textMap[key];
-            var t = 0; 
             Percent = percentMap[key];
-            Coin = coinMap[key];
-            Club = clubMap[key];
-            Path = pathMap[key];
-            Poins = pointsMap[key]; 
+           // Coin = coinMap[key];
+            //Club = clubMap[key];
+            //Path = pathMap[key];
+            //Poins = pointsMap[key]; 
 
         }
 	}

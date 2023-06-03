@@ -137,8 +137,7 @@
 
 @section Scripts
 {
-    <script>
-        function Next() {
+    <script>function Next() {
 
 
             $.ajax({
@@ -148,6 +147,7 @@
                 success: function (responce) {
                     $('#club').html(responce.count)
                     $('#text').html(responce.text)
+                    $('#percentage').html(responce.percent)
                     $('#club').attr('count', responce.count)
                     $('#club').attr('count', responce.count)
                     $('#club').attr('count', responce.count)
@@ -160,10 +160,24 @@
 
         }
 
-        function Back() {
-            alert('@Model.GetCount() Back');
-    }
-    </script>
+        function Back() {$.ajax({
+                type: "GET",
+                url: "/Home/PREV",
+                data: { "count": $("#club").attr('count') },
+                success: function (responce) {
+                    $('#club').html(responce.count)
+                    $('#text').html(responce.text)
+                    $('#percentage').html(responce.percent)
+                    $('#club').attr('count', responce.count)
+                    $('#club').attr('count', responce.count)
+                    $('#club').attr('count', responce.count)
+                    $('#club').attr('count', responce.count)
+
+
+                },
+                error: function (responce) { alert(responce.data) }
+            });
+    }</script>
 }
 
 
