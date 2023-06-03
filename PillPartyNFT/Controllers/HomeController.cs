@@ -154,7 +154,16 @@ namespace PillPartyNFT.Controllers
             {"6", "/css/img/Money Club GIF.gif" }
         };
 
-
+        Dictionary<string, string> pointsMap = new Dictionary<string, string>()
+        {
+            { "0", "- WHITE, BLACK, OR RED SKIN <br />- DEVIL HORNS" },
+            { "1", "-BEER HELMET <br />-40 0Z" },
+            { "2", "-HALO <br/>-WHITE BACKGROUND" },
+            { "3", "-MATCHING SHIRT <br />-MATCHING SKIN <br />-MATCHING BACKGROUND" },
+            { "4", "-GREEN SKIN <br />-ANY SHIRT BUT GREEN" },
+            { "5", "-BLACK EYE <br />-BROKEN TEETH OR SCOWL <br />-FIST" },
+            { "6", "-MONEY HAND <br />-MONEY GUN <br />-ANY SKIN BUT GREEN" }
+        };
 
 
 
@@ -167,7 +176,7 @@ namespace PillPartyNFT.Controllers
             Coin = coinMap[key];
             //Club = clubMap[key];
             //Path = pathMap[key];
-            //Poins = pointsMap[key]; 
+            Points = pointsMap[key]; 
 
         }
 	}
