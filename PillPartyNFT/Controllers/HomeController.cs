@@ -180,12 +180,12 @@ namespace PillPartyNFT.Controllers
         Dictionary<string, string> pathMap = new Dictionary<string, string>()
         {
             {"0", "/css/img/Demon Mascot.png" },
-            {"1", "/css/img/40 Mascot.png" },
-            {"2", "/css/img/Angel Mascot.png" },
-            {"3", "/css/img/Color Mascot.png" },
-            {"4", "/css/img/Goblin Mascot.png" },
-            {"5", "/css/img/Fight Mascot.png" },
-            {"6", "/css/img/Money Mascot.png" }
+            {"1", "/css/img/Club 40.png" },
+            {"2", "/css/img/Club Angel.png" },
+            {"3", "/css/img/Club Color.png" },
+            {"4", "/css/img/Club Goblin.png" },
+            {"5", "/css/img/Club Fight.png" },
+            {"6", "/css/img/Club Money.png" }
         };
 
 
