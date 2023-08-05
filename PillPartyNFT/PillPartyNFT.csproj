@@ -16,6 +16,11 @@
 
   <ItemGroup>
     <Folder Include="wwwroot\final\" />
+    <Folder Include="wwwroot\font\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Content Remove="Views\Home\Gallery.cshtml" />
+    <Content Remove="wwwroot\font\" />
+  </ItemGroup>
 </Project>
