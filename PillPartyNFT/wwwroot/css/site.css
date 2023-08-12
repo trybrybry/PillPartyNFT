@@ -18,7 +18,7 @@ body.team {
 body.club {
     height: 100vmin;
     width: 100vmax;
-    background: url(img/Club_Background.png);
+    background: url(img/City_Background.png);
     background-size: contain;
 }
 body.pink {
