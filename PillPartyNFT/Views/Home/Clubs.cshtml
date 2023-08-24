@@ -132,6 +132,7 @@
 <strong class="percent" id="percentage" count="0" style="font-size: 100%;">370/10000</strong>
 <strong class="text" id="text" count="0" style="font-size: 155%;">DONT FEAR THE REAPER! <br /> DEMON CLUB HAS A DARKER <br /> AESTHETIC THAN THE REST. <br /> LOOKING FOR THE PARTS GRANTS <br />YOU MEMBERSHIP</strong>
 <strong class="points" id="points" count="0" style="font-size: 135%">- WHITE, BLACK, RED SKIN <br /> -DEVILHORNS </strong>
+<strong class="hashtags" id="points" count="0" style="font-size: 135%">#DemonClub</strong>
 <button class="back" onClick="Back()" id="back" type="button"><img style="width: 3vmax; height: 2vmax;" src="~/css/img/BackV1.png" /> </button>
 <button class="next" onClick="Next()" id="next" type="button"><img style="width: 3vmax; height: 2vmax;" src="~/css/img/NextV1.png" /> </button>
 <!--<img class="coin" id="coin" src="~/css/img/Demon Coin GIF.gif" />
@@ -165,6 +166,7 @@
                     $('#points').html(responce.points)
                     $('#mascot').prop('src', responce.path)
                     $('#club').attr('count', responce.count)
+                    $('#hashtag').html(response.hashtag) // unsure what to put here?
 
 
                 },
@@ -187,6 +189,7 @@
                     $('#points').html(responce.points)
                     $('#mascot').prop('src', responce.path)
                     $('#club').attr('count', responce.count)
+                    $('#hashtag').html(response.hashtag) // unsure what to put here?
 
 
                 },

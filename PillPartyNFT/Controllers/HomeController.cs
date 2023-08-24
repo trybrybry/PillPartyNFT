@@ -116,6 +116,7 @@ namespace PillPartyNFT.Controllers
         public string Club { get; set; }
         public string Path { get; set; }
         public string Points { get; set;  }
+        public string Hashtags { get; set; }
 
 
 
@@ -188,6 +189,17 @@ namespace PillPartyNFT.Controllers
             {"6", "/css/img/Club Money.png" }
         };
 
+        Dictionary<string, string> hashtagMap = new Dictionary<string, string>()
+        {
+            {"0", "#DemonClub" },
+            {"1", "#40Club40" },
+            {"2", "#AngelClub" },
+            {"3", "#ColorClub" },
+            {"4", "#GoblinClub" },
+            {"5", "#FightClub" },
+            {"6", "MoneyClub" }
+        };
+
 
 
 
@@ -204,7 +216,8 @@ namespace PillPartyNFT.Controllers
             Coin = coinMap[key];
             Path = pathMap[key];
             Club = clubMap[key];
-            Points = pointsMap[key]; 
+            Points = pointsMap[key];
+            Hashtags = hashtagMap[key]; 
 
         }
 	}
