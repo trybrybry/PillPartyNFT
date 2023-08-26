@@ -194,7 +194,7 @@ namespace PillPartyNFT.Controllers
             {"3", "/css/img/Club Color.png" },
             {"4", "/css/img/Club Goblin.png" },
             {"5", "/css/img/Club Fight.png" },
-            {"6", "/css/img/Club Money.png" }
+            {"6", "/css/img/Money Clubs Page.png" }
         };
 
         Dictionary<string, string> hashtagMap = new Dictionary<string, string>()
