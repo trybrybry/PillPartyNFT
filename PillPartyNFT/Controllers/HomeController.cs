@@ -205,7 +205,7 @@ namespace PillPartyNFT.Controllers
             {"3", "#ColorClub" },
             {"4", "#GoblinClub" },
             {"5", "#FightClub" },
-            {"6", "MoneyClub" }
+            {"6", "#MoneyClub" }
         };
 
 

@@ -54,20 +54,22 @@
 
     .Club {
         font-family: "Peace Sans";
+        text-align: center;
         position: absolute;
-        left: 40vmax;
+        left: 32.5vmax;
         top: 25vmin;
-        width: 80vmax;
+        width: 40vmax;
         height: 50vmin;
         z-index: 3;
     }
 
     .percent {
         font-family: "Peace Sans";
+        text-align: center;
         position: absolute;
-        left: 48.5vmax;
+        left: 32.5vmax;
         top: 32vmin;
-        width: 80vmax;
+        width: 40vmax;
         height: 10vmin;
         z-index: 4;
     }
@@ -95,10 +97,20 @@
     }
 
 
+    .statichashTags {
+        position: absolute;
+        left: 40vmax;
+        top: 73vmin;
+        width: 20vmax;
+        height: 10vmin;
+        z-index: 6;
+        word-wrap: normal
+    }
+
     .hashTags {
         position: absolute;
         left: 40vmax;
-        top: 67.5vmin;
+        top: 70vmin;
         width: 20vmax;
         height: 10vmin;
         z-index: 6;
@@ -162,20 +174,14 @@
 
 <strong class="Club" id="club" count="0" style=" font-size: 350%;">Demon Club</strong>
 <strong class="percent" id="percentage" count="0" style="font-size: 100%;">370/10000</strong>
-<<<<<<< Updated upstream
-<strong class="text" id="text" count="0" style="font-size: 155%;">DONT FEAR THE REAPER! <br /> DEMON CLUB HAS A DARKER <br /> AESTHETIC THAN THE REST. <br /> LOOKING FOR THE PARTS GRANTS <br />YOU MEMBERSHIP</strong>
-<strong class="points" id="points" count="0" style="font-size: 135%">- WHITE, BLACK, RED SKIN <br /> -DEVILHORNS </strong>
-<strong class="hashtags" id="points" count="0" style="font-size: 135%">#DemonClub</strong>
-<button class="back" onClick="Back()" id="back" type="button"><img style="width: 3vmax; height: 2vmax;" src="~/css/img/BackV1.png" /> </button>
-<button class="next" onClick="Next()" id="next" type="button"><img style="width: 3vmax; height: 2vmax;" src="~/css/img/NextV1.png" /> </button>
-=======
+
 <strong class="membership" id="membership" count="0" style=" font-size: 200%;">Membership Criteria</strong>
-<p class="text" id="text" count="0" style="font-size: 150%;">DONT FEAR THE REAPER! <br /> DEMON CLUB HAS A DARKER <br /> AESTHETIC THAN THE REST. <br /> LOOKING FOR THE PARTS GRANTS <br />YOU MEMBERSHIP</p>
-<strong class="points" id="points" count="0" style="font-size: 135%">WHITE, BLACK, RED SKIN <br />DEVILHORNS </strong>
-<strong class="hashTags" id="text" count="0" style="font-size: 155%;">#DemonClub<br />#PillPartyNFT </strong>
+<p class="text" id="text" count="0" style="font-size: 150%;">DONT FEAR THE REAPER! <br /> DEMON CLUB HAS A DARKER<br /> AESTHETIC THAN THE REST. <br /> LOOKING FOR THE PARTS GRANTS <br />YOU MEMBERSHIP</p>
+<strong class="points" id="points" count="0" style="font-size: 135%">WHITE, BLACK, RED SKIN <br />DEVILHORNS</strong>
+<strong class="hashTags" id="hashtag" count="0" style="font-size: 155%;">#DemonClub</strong>
+<strong class="statichashTags" id="hashtag" count="0" style="font-size: 155%;">#PillPartyNFT</strong>
 <button class="back" onClick="Back()" id="back" type="button"> Back </button>
 <button class="next" onClick="Next()" id="next" type="button"> Next </button>
->>>>>>> Stashed changes
 <!--<img class="coin" id="coin" src="~/css/img/Demon Coin GIF.gif" />
 <img class="mascot" id ="mascot" src="~/css/img/Demon Mascot.png" />
 
@@ -207,7 +213,7 @@
                     $('#points').html(responce.points)
                     $('#mascot').prop('src', responce.path)
                     $('#club').attr('count', responce.count)
-                    $('#hashtag').html(response.hashtag) // unsure what to put here?
+                    $('#hashtag').html(responce.hashtags) // unsure what to put here?
 
 
                 },
@@ -230,7 +236,7 @@
                     $('#points').html(responce.points)
                     $('#mascot').prop('src', responce.path)
                     $('#club').attr('count', responce.count)
-                    $('#hashtag').html(response.hashtag) // unsure what to put here?
+                    $('#hashtag').html(responce.hashtags) // unsure what to put here?
 
 
                 },
