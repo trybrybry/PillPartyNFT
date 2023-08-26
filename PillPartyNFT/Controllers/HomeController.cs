@@ -154,13 +154,13 @@ namespace PillPartyNFT.Controllers
 
         Dictionary<string, string> coinMap = new Dictionary<string, string>()
         {
-            {"0", "/css/img/Demon Coin GIF.gif" },
-            {"1", "/css/img/40 Club GIF.gif" },
-            {"2", "/css/img/Angel Club GIF.gif" },
-            {"3", "/css/img/Color Club GIF.gif" },
-            {"4", "/css/img/Goblin Coin GIF.gif" },
-            {"5", "/css/img/Fight Club GIF.gif" },
-            {"6", "/css/img/Money Club GIF.gif" }
+            {"0", "/css/img/COIN DEMON.png" },
+            {"1", "/css/img/COIN 40.png" },
+            {"2", "/css/img/COIN ANGEL.png" },
+            {"3", "/css/img/COIN COLOR.png" },
+            {"4", "/css/img/COIN GOBLIN.png" },
+            {"5", "/css/img/COIN FIGHT.png" },
+            {"6", "/css/img/COIN MONEY.png" }
         };
 
         Dictionary<string, string> pointsMap = new Dictionary<string, string>()
