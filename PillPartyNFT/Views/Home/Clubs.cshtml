@@ -7,6 +7,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap" rel="stylesheet">
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://use.typekit.net/lcb6sil.css" />
+<link href="https://fonts.cdnfonts.com/css/peace-sans" rel="stylesheet">
 
 
 
@@ -36,14 +38,14 @@
         position: absolute;
         left: 0vmax;
         top: 0vmin;
-        width: 80vmax;
-        height: 99vmin;
+        width: 83vmax;
+        height: 100vmin;
         z-index: 1;
     }
 
     .mascot {
         position: absolute;
-        left: 0vmax;
+        left: 1vmax;
         top: 5vmin;
         width: 71.5vmax;
         height: 94vmin;
@@ -51,6 +53,7 @@
     }
 
     .Club {
+        font-family: "Peace Sans";
         position: absolute;
         left: 40vmax;
         top: 25vmin;
@@ -60,40 +63,67 @@
     }
 
     .percent {
+        font-family: "Peace Sans";
         position: absolute;
-        left: 47.5vmax;
-        top: 32.5vmin;
+        left: 48.5vmax;
+        top: 32vmin;
         width: 80vmax;
         height: 10vmin;
         z-index: 4;
     }
 
     .text {
+        font-family: 'bebas-neue-pro';
         position: absolute;
         left: 40vmax;
         top: 35vmin;
-        width: 22vmax;
+        width: 25vmax;
         height: 10vmin;
         z-index: 5;
         word-wrap: normal
     }
 
     .points {
+        font-family: 'bebas-neue-pro';
         position: absolute;
         left: 40vmax;
-        top: 65vmin;
+        top: 60vmin;
         width: 20vmax;
         height: 10vmin;
         z-index: 6;
         word-wrap: normal
     }
 
-    .back {
+
+    .hashTags {
         position: absolute;
-        left: 10.75vmax;
-        top: 84vmin;
-        width: 3vmax;
-        height: 5vmin;
+        left: 40vmax;
+        top: 67.5vmin;
+        width: 20vmax;
+        height: 10vmin;
+        z-index: 6;
+        word-wrap: normal
+    }
+
+    .membership {
+        font-family: "Peace Sans";
+        position: absolute;
+        left: 40vmax;
+        top: 55vmin;
+        width: 80vmax;
+        height: 10vmin;
+        z-index: 6;
+        word-wrap: normal
+    }
+
+    .back {
+        font-family: 'Tilt Warp', cursive;
+        font-size: 150%;
+        position: absolute;
+        left: 10.25vmax;
+        top: 85vmin;
+        width: 5vmax;
+        height: 4.5vmin;
         background-color: transparent;
         outline: none;
         padding: 0;
@@ -104,11 +134,13 @@
 
 
     .next {
+        font-family: 'Tilt Warp', cursive;
+        font-size: 150%;
         position: absolute;
-        left: 35.25vmax;
-        top: 84vmin;
-        width: 3vmax;
-        height: 5vmin;
+        left: 35.5vmax;
+        top: 85vmin;
+        width: 5vmax;
+        height: 4.5vmin;
         background-color: transparent;
         outline: none;
         padding: 0;
@@ -130,11 +162,20 @@
 
 <strong class="Club" id="club" count="0" style=" font-size: 350%;">Demon Club</strong>
 <strong class="percent" id="percentage" count="0" style="font-size: 100%;">370/10000</strong>
+<<<<<<< Updated upstream
 <strong class="text" id="text" count="0" style="font-size: 155%;">DONT FEAR THE REAPER! <br /> DEMON CLUB HAS A DARKER <br /> AESTHETIC THAN THE REST. <br /> LOOKING FOR THE PARTS GRANTS <br />YOU MEMBERSHIP</strong>
 <strong class="points" id="points" count="0" style="font-size: 135%">- WHITE, BLACK, RED SKIN <br /> -DEVILHORNS </strong>
 <strong class="hashtags" id="points" count="0" style="font-size: 135%">#DemonClub</strong>
 <button class="back" onClick="Back()" id="back" type="button"><img style="width: 3vmax; height: 2vmax;" src="~/css/img/BackV1.png" /> </button>
 <button class="next" onClick="Next()" id="next" type="button"><img style="width: 3vmax; height: 2vmax;" src="~/css/img/NextV1.png" /> </button>
+=======
+<strong class="membership" id="membership" count="0" style=" font-size: 200%;">Membership Criteria</strong>
+<p class="text" id="text" count="0" style="font-size: 150%;">DONT FEAR THE REAPER! <br /> DEMON CLUB HAS A DARKER <br /> AESTHETIC THAN THE REST. <br /> LOOKING FOR THE PARTS GRANTS <br />YOU MEMBERSHIP</p>
+<strong class="points" id="points" count="0" style="font-size: 135%">WHITE, BLACK, RED SKIN <br />DEVILHORNS </strong>
+<strong class="hashTags" id="text" count="0" style="font-size: 155%;">#DemonClub<br />#PillPartyNFT </strong>
+<button class="back" onClick="Back()" id="back" type="button"> Back </button>
+<button class="next" onClick="Next()" id="next" type="button"> Next </button>
+>>>>>>> Stashed changes
 <!--<img class="coin" id="coin" src="~/css/img/Demon Coin GIF.gif" />
 <img class="mascot" id ="mascot" src="~/css/img/Demon Mascot.png" />
 
