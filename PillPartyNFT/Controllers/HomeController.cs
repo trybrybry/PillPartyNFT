@@ -54,10 +54,18 @@ namespace PillPartyNFT.Controllers
 
         public IActionResult Clubs()
         {
-            ViewBag.color = "cream";
+            ViewBag.color = "club";
             ViewBag.count = "0"; 
 
-            return View( new ClubsViewModel());
+            return View( );
+        }
+
+        public IActionResult TermsOfService()
+        {
+            ViewBag.color = "none";
+            ViewBag.count = "0";
+
+            return View();
         }
 
 
@@ -116,18 +124,19 @@ namespace PillPartyNFT.Controllers
         public string Club { get; set; }
         public string Path { get; set; }
         public string Points { get; set;  }
+        public string Hashtags { get; set; }
 
 
 
         Dictionary<string, string> textMap = new Dictionary<string, string>()
         {
-            {"0", "DONT FEAR THE REAPER! <br /> DEMON CLUB HAS A DARKER <br /> AESTHETIC THAN THE REST. <br /> LOOKING THE PARTS GRANTS <br /> YOU MEMBERSHIP.</p>" },
-            {"1", "40 CLUB IS FOR THE BOYS. <br /> IF YOU MEET THE RIGHT CRITERIA, <br /> WE LET YOU IN AND GIVE. <br /> YOU A SPECIAL COIN <br /> BADGE TO REPRESENT.</p>" },
-            {"2", "72 VIRGINS? NOPE,97 DEGENS <br /> WITH ETH TO SPARE. <br /> DONT WORRY ABOUT A THING, <br /> YOU'RE IN THE GOOD PLACE NOW.</p>" },
-            {"3", "BLACK, WHITE, GREEN, OR BLUE, <br /> COLOR CLUB IS JUST ONE HUE. <br /> IF YOU'RE MMULTICOLORED, <br /> THIS ISN'T FOR YOU.</p>" },
+            {"0", "DONT FEAR THE REAPER! <br /> DEMON CLUB HAS A DARKER <br /> AESTHETIC THAN THE REST. <br /> LOOKING THE PARTS; GRANTS <br /> YOU MEMBERSHIP.</p>" },
+            {"1", "40 CLUB IS FOR THE BOYS. <br /> IF YOU MEET THE RIGHT CRITERIA, <br /> WE LET YOU IN AND GIVE <br /> YOU A SPECIAL COIN <br /> BADGE TO REPRESENT.</p>" },
+            {"2", "72 VIRGINS? NOPE, 97 DEGENS <br /> WITH ETH TO SPARE. <br /> DONT WORRY ABOUT A THING, <br /> YOU'RE IN THE GOOD PLACE NOW.</p>" },
+            {"3", "BLACK, WHITE, GREEN, OR BLUE, <br /> COLOR CLUB IS JUST ONE HUE. <br /> IF YOU'RE MULTICOLORED, <br /> THIS ISN'T FOR YOU.</p>" },
             {"4", "YOU KNOW 'EM WHEN YOU SEE 'EM. <br /> THESE GREEN BASTARDS RUIN EVERYTHING. <br /> PRESS 'S' TO SPIT. <br /> GOBLINS TOGETHER ARE STRONG.</p>" },
-            {"5", "WE DON'T LIKE TO TALK ABOUT IT. <br /> AND DON'T GO ASK THE NEXT GUY EITHER. <br /> BRAWLERS ONLY. <br /> KEEP YOUR FISTS CLENCHED.</p>" },
-            {"6", "MONEY CLUB'S INFLUENCE EXTENDS. <br /> FAR BEYOND THE BOARDROOM. <br /> UNIMAGINABLE WEALTH MANIFEST. <br /> MONEY MONEY MONEY.</p>" }
+            {"5", "WE DON'T LIKE TO TALK ABOUT IT. <br /> AND DON'T GO ASK THE NEXT GUY NEITHER. <br /> BRAWLERS ONLY. <br /> KEEP YOUR FISTS CLENCHED.</p>" },
+            {"6", "MONEY CLUB'S INFLUENCE EXTENDS <br /> FAR BEYOND THE BOARDROOM. <br /> UNIMAGINABLE WEALTH MANIFEST. <br /> MONEY MONEY MONEY.</p>" }
         };
 
 
@@ -145,24 +154,24 @@ namespace PillPartyNFT.Controllers
 
         Dictionary<string, string> coinMap = new Dictionary<string, string>()
         {
-            {"0", "/css/img/Demon Coin GIF.gif" },
-            {"1", "/css/img/40 Club GIF.gif" },
-            {"2", "/css/img/Angel Club GIF.gif" },
-            {"3", "/css/img/Color Club GIF.gif" },
-            {"4", "/css/img/Goblin Coin GIF.gif" },
-            {"5", "/css/img/Fight Club GIF.gif" },
-            {"6", "/css/img/Money Club GIF.gif" }
+            {"0", "/css/img/COIN DEMON.png" },
+            {"1", "/css/img/COIN 40.png" },
+            {"2", "/css/img/COIN ANGEL.png" },
+            {"3", "/css/img/COIN COLOR.png" },
+            {"4", "/css/img/COIN GOBLIN.png" },
+            {"5", "/css/img/COIN FIGHT.png" },
+            {"6", "/css/img/COIN MONEY.png" }
         };
 
         Dictionary<string, string> pointsMap = new Dictionary<string, string>()
         {
-            { "0", "- WHITE, BLACK, OR RED SKIN <br />- DEVIL HORNS" },
-            { "1", "-BEER HELMET <br />-40 0Z" },
-            { "2", "-HALO <br/>-WHITE BACKGROUND" },
-            { "3", "-MATCHING SHIRT <br />-MATCHING SKIN <br />-MATCHING BACKGROUND" },
-            { "4", "-GREEN SKIN <br />-ANY SHIRT BUT GREEN" },
-            { "5", "-BLACK EYE <br />-BROKEN TEETH OR SCOWL <br />-FIST" },
-            { "6", "-MONEY HAND <br />-MONEY GUN <br />-ANY SKIN BUT GREEN" }
+            { "0", "WHITE, BLACK, OR RED SKIN <br />DEVIL HORNS" },
+            { "1", "BEER HELMET <br />40 0Z" },
+            { "2", "HALO <br/>WHITE BACKGROUND" },
+            { "3", "MATCHING SHIRT <br />MATCHING SKIN <br />MATCHING BACKGROUND" },
+            { "4", "GREEN SKIN <br />ANY SHIRT BUT GREEN" },
+            { "5", "BLACK EYE <br />BROKEN TEETH OR SCOWL <br />FIST" },
+            { "6", "MONEY HAND <br />MONEY GUN <br />ANY SKIN BUT GREEN" }
         };
 
         Dictionary<string, string> clubMap = new Dictionary<string, string>()
@@ -185,7 +194,18 @@ namespace PillPartyNFT.Controllers
             {"3", "/css/img/Club Color.png" },
             {"4", "/css/img/Club Goblin.png" },
             {"5", "/css/img/Club Fight.png" },
-            {"6", "/css/img/Club Money.png" }
+            {"6", "/css/img/Money Clubs Page.png" }
+        };
+
+        Dictionary<string, string> hashtagMap = new Dictionary<string, string>()
+        {
+            {"0", "#DemonClub" },
+            {"1", "#40Club" },
+            {"2", "#AngelClub" },
+            {"3", "#ColorClub" },
+            {"4", "#GoblinClub" },
+            {"5", "#FightClub" },
+            {"6", "#MoneyClub" }
         };
 
 
@@ -204,7 +224,8 @@ namespace PillPartyNFT.Controllers
             Coin = coinMap[key];
             Path = pathMap[key];
             Club = clubMap[key];
-            Points = pointsMap[key]; 
+            Points = pointsMap[key];
+            Hashtags = hashtagMap[key]; 
 
         }
 	}
