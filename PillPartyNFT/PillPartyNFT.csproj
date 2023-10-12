@@ -6,12 +6,28 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
   <ItemGroup>
     <_ContentIncludedByDefault Remove="wwwroot\css\img\Legal_Discord_Coin_Black.png" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.10" />
+    <PackageReference Include="OrchardCore" Version="1.7.0" />
+    <PackageReference Include="OrchardCore.Mvc.Core" Version="1.7.0" />
+    <PackageReference Include="OrchardCore.ContentManagement" Version="1.7.0" />
+    <PackageReference Include="OrchardCore.Data" Version="1.7.0" />
+    <PackageReference Include="OrchardCore.Admin.Abstractions" Version="1.7.0" />
+    <PackageReference Include="OrchardCore.Deployment.Abstractions" Version="1.7.0" />
+    <PackageReference Include="OrchardCore.DisplayManagement.Abstractions" Version="1.7.0" />
+    <PackageReference Include="OrchardCore.Navigation.Core" Version="1.7.0" />
+    <PackageReference Include="OrchardCore.ResourceManagement" Version="1.7.0" />
+    <PackageReference Include="OrchardCore.DisplayManagement" Version="1.7.0" />
+    <PackageReference Include="OrchardCore.ContentTypes.Abstractions" Version="1.7.0" />
+    <PackageReference Include="OrchardCore.Module.Targets" Version="1.7.0" />
+    <PackageReference Include="OrchardCore.Liquid.Abstractions" Version="1.7.0" />
   </ItemGroup>
 
   <ItemGroup>
@@ -22,5 +38,22 @@
   <ItemGroup>
     <Content Remove="Views\Home\Gallery.cshtml" />
     <Content Remove="wwwroot\font\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="OrchardCore" />
+    <None Remove="OrchardCore.Mvc.Core" />
+    <None Remove="OrchardCore.ContentManagement" />
+    <None Remove="OrchardCore.Data" />
+    <None Remove="OrchardCore.Admin.Abstractions" />
+    <None Remove="OrchardCore.Deployment.Abstractions" />
+    <None Remove="OrchardCore.DisplayManagement.Abstractions" />
+    <None Remove="OrchardCore.Navigation.Core" />
+    <None Remove="OrchardCore.ResourceManagement" />
+    <None Remove="OrchardCore.DisplayManagement" />
+    <None Remove="OrchardCore.ContentTypes.Abstractions" />
+    <None Remove="OrchardCore.Module.Targets" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Remove="OrchardCore.Liquid.Abstractions" />
   </ItemGroup>
 </Project>
