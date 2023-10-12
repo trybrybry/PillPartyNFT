@@ -6,20 +6,17 @@ html {
 body.home {
     height: 100vmin;
     width: 100vmax;
-    background: url('img/Website Home Layer 16 A.png');
-    background-size: contain;
-}
+    background: url('img/Website Home Layer 16 A.png') center center  no-repeat fixed;
+    }
 body.team {
     height: 100vmin;
     width: 100vmax;
-    background: url(img/Team_Page.png);
-    background-size:contain;
+    background: url(img/Team_Page.png)center center  no-repeat fixed;
 }
 body.club {
     height: 100vmin;
     width: 100vmax;
-    background: url(img/City_Background.png);
-    background-size: contain;
+    background: url(img/City_Background.png) center center  no-repeat fixed;
 }
 body.pink {
     height: 100%;
@@ -34,8 +31,7 @@ body.black {
 body.yellow {
     height: 100vmin;
     width: 100vmax;
-    background: url(img/yellow_wb.png);
-    background-size: contain;
+    background: url(img/yellow_wb.png) center center  no-repeat fixed;
 }
 
 
