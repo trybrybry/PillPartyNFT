@@ -1,4 +1,7 @@
 ﻿<!DOCTYPE html>
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="~/js/site.js" asp-append-version="true"></script>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -9,17 +12,17 @@
     <link rel="stylesheet" href="~/PillPartyNFT.styles.css" asp-append-version="true" />
 </head>
 
-    @Html.Partial("header")
+@Html.Partial("header")
 
 
-    <body class="@ViewBag.color">
-        @RenderBody()
+<body class="@ViewBag.color">
+    @RenderBody()
 
-    </body>
+</body>
 
-    @Html.Partial("footer")
+@Html.Partial("footer")
 
-    @await RenderSectionAsync("Scripts", required: false)
+@await RenderSectionAsync("Scripts", required: false)
 
 </html>
 
